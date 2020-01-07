@@ -1,33 +1,72 @@
-unity版本：2018.2f3
-# 简介
-一个基于unity3d的开发框架。
-框架力致于打造一个简单、高效的开发流，更注重于基于数据驱动的工具开发（个人以为工具才是第一生产力，框架只是辅助而已）。
-<br>有疑问 来群里找我@奶泡泡 或者B道友,QQ群:512079820 欢迎有问题,共同探讨.
-## 版本计划
-<br> 2018.7 热更新工具整合：代码更新及工具
-<br> 2018.8 热更新工具整合：资源更新
-## 框架特点
-  <br>**不开发工具的架构都是耍流氓!!!!**<br>
-  <br>所有方案制作，都致力于开发者0学习成本，跟普通开发一样舒爽。
-  <br>1.业务逻辑自动注册
-  <br>2.热更代码跟非热更开发一样舒爽
-  <br>3.ui工作流代码自动生成，数据自动绑定等
-  <br> ...
-  <br> 以工具开发为主，辅助各个工作流提高开发效率。
-  <br> 致力于“**程序只开发逻辑，体力活交给编辑器**”
-# 文档 
-预计2018.8.10号前完成文档
-### 管理器:
-1.管理器与业务自动.            [点击](https://zhuanlan.zhihu.com/p/40751037)
-### 游戏Timeline:
-1.ScreenView模块管理和状态机   [点击](https://zhuanlan.zhihu.com/p/40755348)
-### UI工作流:
-1.psd2ugui：prefab生成方式自行选择
-<br>2.UIManager和UI基础操作.   [点击](https://zhuanlan.zhihu.com/p/40766519)
-<br>3.MVC模式初探              [点击](https://zhuanlan.zhihu.com/p/40772076)
-<br>4.UI工作流工具的使用        [点击](https://zhuanlan.zhihu.com/p/40941129)
-<br>5.UI开发利器：UITools      [点击](https://zhuanlan.zhihu.com/p/40968876)
-<br>5.数据处理                 [点击](http://) （未完成）
-### 热更新:
-1.C#脚本热更及编辑器：开发跟普通一样,只需标记热更代码即可.[点击](https://zhuanlan.zhihu.com/p/41070384)
-<br>2.资源热更及编辑器：热更和日常开发一套API，无需来回切换.[点击](http://) （未完成）
+### Version : Unity2018.4.10f1  
+<img src="./BDTemp/Img/logo.png" width = "280" height = "100" div align=right />
+
+# 简介(Introduction)
+Simple! Easy! Beautiful!  This‘s a powerful Unity3d game workflow! Not a collection of libraries  
+
+#### 热更项目的开发,只需要轻轻一点，一键帮你完成~  
+
+#### 第九第十艺术交流:763141410 （QQ Group:763141410）  
+If you find a bug or have some suggestions,please make issue! I'll get back to you!  
+任何问题直接提issue,24小时内必解决   
+国内git地址: https://gitee.com/yimengfan/BDFramework.Core  ,速度慢下这个(顺便讨个赞)
+
+## 文档(Document)  
+ #### [  视屏教程（video）](https://www.bilibili.com/video/av78814115/)
+ #### [  博客（Blog）](https://zhuanlan.zhihu.com/c_177032018)
+ #### [中文 Wiki](https://www.yuque.com/naipaopao/eg6gik)  
+ #### [English Wiki](http://www.nekosang.com)  
+ ### [  更新日志 ](https://github.com/yimengfan/BDFramework.Core/wiki/V0.01-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)  
+ 
+#### Lastest:  2019.11.8 20.00  
+注:所有bug修复和新特性加入会先提交到Debug分支。待审核期一个月，稳定则会跟主分支进行合并。  
+Note: All bug fixes and new features will be submitted to the Debug branch first. The period to be audited is one month, and stability will be merged with the main branch.
+
+
+# 依赖的插件(Dpendent plugins)
+使用了以下收费插件,请自行购买下载：  
+The following charging plug-ins are used. Please purchase and download them yourself.  
+<br>[Odin] (https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)  
+
+## v1.0版本计划(v1.0 Plan)
+<br> 2019.12 加入后端框架基于Web架构, Asp .Net Core
+<br> 其实Web服务器能解决90%的游戏业务(基于分布式架构，部分业务如战斗可以开单独的服务器作计算节点),
+<br> 更主要是Web服务器工作流更完善、解决方案更多、更省服务器资源（钱),
+<br> ~~2019.10 完成UI工作流的升级和重构(兼容老版本)~~
+<br> ~~2019.6.30之前 完成新文档的编写(已完成)
+<br> 2018.7 热更新工具整合：代码更新及工具(已完成)
+<br> 2018.8 热更新工具整合：资源更新（已完成）~~
+## 框架特点(Feature)
+   <br>**1.发现式业务注册:**
+   <br>BDFrame底层提供了一套发现式的业务注册.无需以前的各种Register,只要定制好自己的标签、管理器就能被自动注册.
+   <br>在此之上BD,实现了ScreenviewManger,UIManager,EventManager...等一些列管理器。
+   <br>这套机制高度可扩展、可定制,使用者根据自己的需求可以实现其他的管理器
+   <br>并且这个在编辑器环境下也生效的哦~ 写工具时候会很有帮助的哦~
+   
+   <br>**2.模块管理、调度**
+   <br>BD给大家带来了一种开发思路，用户使用流程的Timeline（不是unity的那个timeline）,
+   <br>根据用户流程进行切分模块、调度,这里的模块并不是狭义的一个窗口哦~
+   
+   <br>**3.完善的UI工作流:**
+   <br>BD中有一整套完善的UI工作流(这里我们只对UI逻辑进行管理，不考虑ui制作)，无论你是UGUI NGUI还是其他。
+   <br>我们提供了一套UI管理、值绑定、数据监听、数据流等一系列机制.
+   <br>预计2018年Q4我们完成UI系统的进一步升级，希望打造成一套比较先进、科学的工作流。
+   
+   <br>**4.资源管理：**
+   <br>BD抛弃了Resources目录，并且保留的用户Resources的开发习惯.
+   <br> 一套API自动切换，兼容AB和Editor模式.
+   <br>而且有一套比较完善的AssetBundle管理机制：图集管理、自动搜集Shader、0冗余打包
+   <br>并且bd做了一套精简版可寻址，无论你的Asset再Streaming或者persistent下，都能自动寻找并且加载
+   
+   <br>**5.C#热更代码开发:**
+   <br>BD中对ILRuntime进行了二次改造，不用分工程、并且写了一套完善的脚本编译机制,打包工具自动搜集热更代码进行打包。
+   <br>并且对常用库进行了适配.
+   
+   <br>**6.表格管理:** 
+   <br>BD中用Sqlite进行管理表格,并且提供了excel2code，excel2json，excel2sqlite等工具
+   
+   <br>**6.版本发布:**
+   <br>代码、资源、表格一键打包,版本管理自动下载
+
+   <br>还有好多我就觉得都是常用的东西:比如事件系统啊、什么http库啊、什么对象池啊就懒得列举了
+

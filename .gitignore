@@ -74,3 +74,16 @@
 /BDFramework/*.out
 /BDFramework/*.tmp
 /BDFramework/obj
+/Logs
+/.gradle
+/Assets/Plugins/Editor/JetBrains
+/Assets/Plugins/Editor/JetBrains.meta
+/Assets/Plugins/Sirenix
+/Assembly-CSharp-firstpass.csproj
+/BDFramework.Core.sln
+/Assets/Code/BDFramework/github/Ilr/Mono.Cecil/.svn
+/NewAssembly.csproj
+/Build
+/Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj
+/Sirenix.OdinInspector.CompatibilityLayer.csproj
+/*.sln

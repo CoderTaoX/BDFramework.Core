@@ -1,0 +1,24 @@
+
+{
+  "Android" : {
+    "keystoreName" : "BDTemp/SDK/user.keystore",
+    "keystorePass" : "111111",
+    "keyaliasName" : "test",
+    "keyaliasPass" : "111111"
+  },
+  "IosConfig" : {
+    "test" : null,
+    "test2" : null
+  },
+  "AndroidDebug" : {
+    "keystoreName" : null,
+    "keystorePass" : null,
+    "keyaliasName" : null,
+    "keyaliasPass" : null
+  },
+  "IosConfigDebug" : {
+    "test" : null,
+    "test2" : null
+  },
+  "savepath"       : "E:/BDFramework.Core/BDTemp/config.json"
+}
